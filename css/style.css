@@ -32,10 +32,18 @@
   
  .section-line{ 
     border-bottom: 1px solid rgba(208, 212, 216, .5);
- }
+ } 
+
+ .title{ 
+    font-family: 'Georgia';
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;  
+    color: #4E5665; 
+ }  
 
  .header__top {
-     background-image: url('../images/top-bg.jpg');
+     /* background-image: url('../images/top-bg.jpg'); */
      height: 100vh;
      background-repeat: no-repeat;
      background-size: cover;
@@ -118,12 +126,7 @@
  }  
   
  .reason__title{ 
-    font-family: 'Georgia';
-    font-size: 32px;
-    line-height: 38px;
-    text-align: center;  
-    color: #4E5665; 
-    margin-bottom: 22px;
+     margin-bottom:22px;
  }
    
  .reason__link{ 
@@ -163,6 +166,62 @@
     padding: 80px 0 0;
 }
  
-.about__title{ 
-    
+.about__title{  
+    margin-bottom: 13px;
 }
+ 
+.about__text{ 
+    margin-bottom: 72px;
+} 
+ 
+.about__item{ 
+    margin-bottom: 100px; 
+    padding:70px 0; 
+    background-repeat: no-repeat; 
+    background-position:right;
+} 
+ 
+.about__box{ 
+    padding: 33px 40px 18px 40px; 
+    background-color:#fff; 
+    max-width:470px; 
+    position:relative;
+}   
+ 
+.about__box::after, 
+.about__box::before{ 
+   content: ""; 
+   position:absolute; 
+   width: 33px; 
+   height: 33px;
+} 
+
+.about__box::before{ 
+  background-image: url('../images/dekor-left.svg');  
+  top:19px; 
+  left:19px;
+} 
+ 
+.about__box::after{  
+    background-image: url('../images/dekor-right.svg');  
+    bottom:19px; 
+    right:19px;
+} 
+
+.about__box-title{   
+    font-family: 'Georgia';
+    font-size: 24px;
+    line-height: 25px;   
+    color:#4E5665; 
+    margin-bottom: 20px; 
+}  
+ 
+.about__item:nth-child(even){ 
+    background-position: left;
+} 
+ 
+.about__item:nth-child(even) .about__box{  
+  margin-left:auto;
+}
+ 
+
