@@ -514,7 +514,9 @@
     }  
 
     .footer__item{ 
-        width:50%;
+        width:50%; 
+        margin-bottom:35px; 
+        padding-right:25px;
     }
 }
  
@@ -630,7 +632,18 @@
      margin-bottom: 35px;
    } 
 
-} 
+}  
+ 
+@media(max-width: 470px){   
+  .footer__items{ 
+     display: block;
+  } 
+   
+  .footer__item{ 
+     width: 100%; 
+     padding-right:0;
+  }
+}
  
 @media(min-width: 700px){  
     .menu__list{ 
