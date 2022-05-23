@@ -337,7 +337,9 @@
     bottom:0;
     left: 0;
     right: 0;
-    margin: 0 auto;
+    margin: 0 auto; 
+    left:0; 
+    right:0;
 }
 
 .photo__slider{
@@ -446,6 +448,63 @@
  
 .menu__btn{ 
     display:none;
+}  
+  
+.about__images-box img{ 
+    max-width:100%;
+} 
+
+@media(max-width: 1075px) { 
+
+    .about__dot--1 {
+        top: 150px;
+        left: 75px;
+    }  
+
+    .about__dot--2{ 
+        top: 188px;
+        left: 340px;  
+    }  
+
+    .about__dot--3{ 
+        top: 133px;
+        right: 260px;  
+    }   
+
+    .about__dot--4{ 
+        right: 200px;
+        bottom: 28px;  
+    }
+}
+ 
+@media(max-width: 840px){   
+    .about__item{ 
+        padding: 382px 0 70px; 
+        background-position: top; 
+        margin-bottom: 0;
+    } 
+
+    .about__box{ 
+        margin:0 auto; 
+        padding: 33px 20px 18px 20px;
+    }  
+
+    .about__item:nth-child(even) {
+        background-position: top;
+    } 
+    .about__dot{  
+        display: none;
+    }  
+
+    .about__images-box{ 
+        padding-top:0;
+    } 
+       .slick-next{ 
+       right: 10px;
+    } 
+    .slick-prev{ 
+       left: 10px;
+    }   
 }
  
 @media(max-width: 700px){ 
@@ -486,9 +545,46 @@
         border-top:4px solid #ECB84C;
     } 
      
-    .menu__list-link:hover {
+    .menu__list-link:hover{
         border-bottom:4px solid transparent;
-    }
+    } 
+      
+  
+
+    .slick-dots{ 
+        border:1pc solid transparent; 
+        display:flex; 
+        justify-content: center;  
+    }    
+      
+    
+      #slick-slide-control00{  
+      background-color: #33DAFF; 
+      border:1px solid transparent;  
+      width:25px; 
+      height: 25px;
+      border-radius:50%; 
+      margin:0 7px; 
+      color:#FFF; 
+    } 
+    #slick-slide-control01{ 
+        background-color: #33DAFF; 
+        border:1px solid transparent;  
+        width:25px; 
+        height: 25px;
+        border-radius:50%; 
+        margin:0 7px; 
+        color:#FFF; 
+      }  
+    #slick-slide-control02{ 
+      background-color: #33DAFF; 
+      border:1px solid transparent;  
+      width:25px; 
+      height: 25px;
+      border-radius:50%; 
+      margin:0 7px; 
+      color:#FFF; 
+      } 
 } 
  
 @media(max-width: 540px){  
@@ -521,7 +617,8 @@
    }
    .reason__statistics-item{ 
      margin-bottom: 35px;
-   }
+   } 
+
 } 
  
 @media(min-width: 700px){  
